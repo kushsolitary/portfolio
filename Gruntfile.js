@@ -477,7 +477,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'buildcontrol'
   ]);
 
   grunt.registerTask('default', [
