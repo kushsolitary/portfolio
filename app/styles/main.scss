@@ -116,10 +116,10 @@ h1 {
   opacity: 0;
   transform: translateY(-50%);
 
-  -webkit-animation: appear 0.8s ease-out 1s forwards;
-     -moz-animation: appear 0.8s ease-out 1s forwards;
-       -o-animation: appear 0.8s ease-out 1s forwards;
-          animation: appear 0.8s ease-out 1s forwards;
+  -webkit-animation: appear 0.7s ease-out 1s forwards;
+     -moz-animation: appear 0.7s ease-out 1s forwards;
+       -o-animation: appear 0.7s ease-out 1s forwards;
+          animation: appear 0.7s ease-out 1s forwards;
 }
 
 @-webkit-keyframes appear { from { top:70%; opacity: 0} to { top:60%; opacity: 1 }  }
