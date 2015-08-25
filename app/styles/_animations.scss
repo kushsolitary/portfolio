@@ -1,0 +1,28 @@
+.fade {
+    opacity: 1;
+}
+
+.fade.ng-leave {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.fade.ng-enter {
+    -webkit-transition: all 0.4s ease 0.6s;
+    transition: all 0.4s ease 0.6s;
+}
+
+.fade.ng-enter {
+    opacity: 0;
+}
+
+.fade.ng-enter-active {
+    opacity: 1;
+}
+
+.fade.ng-leave {
+    opacity: 1;
+}
+
+.fade.ng-leave-active {
+    opacity: 0;
+}

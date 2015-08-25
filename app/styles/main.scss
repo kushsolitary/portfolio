@@ -3,6 +3,7 @@
 
 @import 'variables';
 @import 'mixins';
+@import 'animations';
 
 /* RESET */
 .clearfix:after {
@@ -85,6 +86,8 @@ body {
   text-decoration: none;
   color: #bababb;
   font-weight: normal;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .nav__link--active a {
@@ -100,33 +103,20 @@ h1 {
 
 /* CONTENT */
 .content {
-  position: relative;
-  min-height: calc(100% - 170px - 80px);
+  min-height: calc(100vh - 170px - 80px);
 }
 
 .content--home {
-  height: calc(100% - 170px - 80px);
+  height: calc(100vh - 170px - 80px);
 }
 
 .center {
   text-align: center;
   font-size: 15px;
   position: relative;
-  top: 70%;
-  opacity: 0;
+  top: 60%;
   transform: translateY(-50%);
-
-  -webkit-animation: appear 0.7s ease-out 1s forwards;
-     -moz-animation: appear 0.7s ease-out 1s forwards;
-       -o-animation: appear 0.7s ease-out 1s forwards;
-          animation: appear 0.7s ease-out 1s forwards;
 }
-
-@-webkit-keyframes appear { from { top:70%; opacity: 0} to { top:60%; opacity: 1 }  }
-   @-moz-keyframes appear { from { top:70%; opacity: 0} to { top:60%; opacity: 1 }  }
-     @-o-keyframes appear { from { top:70%; opacity: 0} to { top:60%; opacity: 1 }  }
-        @keyframes appear { from { top:70%; opacity: 0} to { top:60%; opacity: 1 }  }
-
 
 .sep-c {
   width: 50px;
@@ -138,6 +128,28 @@ h1 {
   display: block;
 }
 
+.sep-l {
+  width: 127px;
+  height: 14px;
+  background-image: url("../images/separator_l.png");
+  background-size: 127px 14px;
+  background-repeat: no-repeat;
+  margin: 35px 0;
+}
+
+.left-heading {
+  font-size: 15px;
+  padding-top: 170px;
+
+  h1 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    line-height: 28px
+  }
+}
+
 .italic {
   font-style: italic;
 }
@@ -145,14 +157,13 @@ h1 {
 /* FOOTER */
 .footer {
   height: 170px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   background-image: url("../images/footer.png");
   background-size: 177px 134px;
   background-position: center 35px;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 
   p {
     color: rgba(255, 255, 255, 0.1);

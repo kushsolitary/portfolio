@@ -19,7 +19,7 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
 
-  <body ng-app="portfolioApp">
+  <body ng-app="portfolioApp" ng-controller="GlobalCtrl">
     <div class="header">
       <div class="container  cleafix">
         <a href="#/" class="logo-top"></a>
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div ng-view="" class="content  content--home">
+    <div ng-view="" class="content  fade">
     </div>
 
     <div class="footer">
@@ -71,6 +71,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/global.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/work.js"></script>
