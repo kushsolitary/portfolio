@@ -47,7 +47,7 @@ body {
 .logo-top {
   background: url("../images/logo_top.png") no-repeat;
   background-size: contain;
-  width: 20px;
+  width: 30px;
   height: 30px;
   display: block;
   float: left;
@@ -90,8 +90,47 @@ body {
   transition: all 0.2s ease;
 }
 
-.nav__link--active a {
+.nav__link a:hover {
+  color: white;
+}
+
+.nav__link--active a, .nav__link--active a:hover {
   color: $accent-color;
+}
+
+.nav__link--dropdown > a {
+  padding-right: 20px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 5px;
+    background: url(../images/caret.png) no-repeat;
+    width: 8px;
+    height: 5px;
+    background-size: cover;
+  }
+}
+
+.nav__link--dropdown:hover .network-list {
+  visibility: visible;
+  opacity: 1;
+}
+
+.network-list {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  list-style: none;
+  position: absolute;
+
+  li {
+    margin-top: 15px;
+  }
 }
 
 h1 {
@@ -247,7 +286,7 @@ h1 {
   display: block;
 
   &:hover {
-    color: $accent-color;
+    color: white;
   }
 }
 

@@ -12,7 +12,7 @@ angular.module('portfolioApp')
   	var token = 'e7b15fb9b16b80beeb965aa5ae9cc596292fe64dde6bc57fe8d5840698cac9bf';
   	$scope.shots = []
 
-  	$http.get('https://api.dribbble.com/v1/users/kushsolitary/shots?access_token=' + token + '&per_page=8')
+  	$http.get('https://api.dribbble.com/v1/users/kushsolitary/shots?access_token=' + token + '&per_page=8', {cache: true})
   	.then(function(res) {
   		$scope.shots = res.data;
   	})

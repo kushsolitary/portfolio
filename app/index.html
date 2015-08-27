@@ -28,8 +28,17 @@
         <ul class="nav">
           <li class="nav__link" ng-class="{'nav__link--active': $route.current.templateUrl.indexOf('main') > -1}"><a href="/#/">Home</a></li>
           <li class="nav__link" ng-class="{'nav__link--active': $route.current.templateUrl.indexOf('work') > -1}"><a href="/#/work">Work</a></li>
-          <li class="nav__link" ng-class="{'nav__link--active': $route.current.templateUrl.indexOf('blog') > -1}"><a href="/">Blog</a></li>
-          <li class="nav__link"><a href="/">Find me on</a></li>
+          <li class="nav__link" ng-class="{'nav__link--active': $route.current.templateUrl.indexOf('blog') > -1}"><a href="/#/blog">Blog</a></li>
+          <li class="nav__link  nav__link--dropdown">
+            <a href="">Find me on</a>
+
+            <ul class="network-list">
+              <li><a href="http://dribbble.com/kushsolitary">Dribbble</a></li>
+              <li><a href="http://twitter.com/kushsolitary">Twitter</a></li>
+              <li><a href="http://github.com/kushsolitary">Github</a></li>
+              <li><a href="http://instagram.com/kush.ag">Instagram</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -75,6 +84,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/work.js"></script>
+        <script src="scripts/controllers/blog.js"></script>
         <!-- endbuild -->
 </body>
 </html>
