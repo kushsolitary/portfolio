@@ -150,6 +150,24 @@ h1 {
   }
 }
 
+.work-grid {
+  overflow: hidden;
+  margin-left: 1px;
+  margin-top: 40px;
+}
+
+.work-grid__item {
+  width: 292px;
+  margin-right: 1px;
+  height: 219px;
+  background: rgba(255, 255, 255, 0.05);
+  float: left;
+  margin-bottom: 1px;
+  display: block;
+
+  background-size: contain;
+}
+
 .italic {
   font-style: italic;
 }
