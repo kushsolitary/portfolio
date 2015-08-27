@@ -8,7 +8,11 @@
 		<div class="sep-l"></div>
 
 		<div class="work-grid" ng-if="shots.length">
-			<a target="_blank" href="{{ shot.html_url }}" style="background-image: url({{ shot.images.hidpi }})" ng-repeat="shot in shots" class="work-grid__item"></a>
+			<a href="{{ shot.html_url }}" style="background-image: url({{ shot.images.hidpi }})" ng-repeat="shot in shots" class="work-grid__item">
+				<h3>{{ shot.title }}</h3>
+			</a>
 		</div>
+
+		<a href="http://dribbble.com/kushsolitary" class="dribbble-link">View more on dribbble</a>
 	</div>
 </div>
