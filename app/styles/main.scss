@@ -257,11 +257,11 @@ h1 {
 }
 
 .work-grid:hover {
-  .work-grid__item:before {
-    opacity: 0.8;
-  }
-
   .work-grid__item:hover {
+    &:before{
+      opacity: 0.8;
+    }
+
     &:after {
       opacity: 1;
     }
