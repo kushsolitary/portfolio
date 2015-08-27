@@ -37,8 +37,8 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:kushsolitary/portfolio.git',
-          branch: 'gh-pages'
+          remote: 'git@github.com:kushsolitary/kushsolitary.github.io.git',
+          branch: 'master'
         }
       }
     },
